@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import 'partials/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $white-bg;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+    font-size: 1.5rem;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+main {
+    height: 100vh;
+
+    .container {
+        @include flexCenterCenter();
+
+        max-width: 120rem;
+        height: 100%;
+        gap: 6rem;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+
+        .instagram-phone {
+           height: 59.1rem;
+           width: 30rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .group {
+            @include flexCenterCenter();
+
+            background-color: $white;
+            border: 0.1rem solid $gray-border;
+            flex-direction: column;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .profile-login {
+            @include flexStartStart();
+
+            width: 40rem;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .profile-login-top {
+                gap: 2rem;
+
+                .profile-image {
+                    width: 12rem;
+                    height: 12rem;
+                    clip-path: circle();
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .btn-continue {
+                    background-color: $blue;
+                    color: $white;
+                    border-radius: 0.5rem;
+                    padding: 1.2rem;
+                }
+
+                .btn-remove-acc {
+                    color: $blue;
+                    background-color: transparent;
+                }
+            }
+
+            .profile-login-bottom {
+                gap: 0.5rem;
+
+                p:first-child {
+                    color: $gray;
+                }
+
+                p:last-child {
+                    span {
+                        color: $blue;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .download-app {
+                @include flexCenterCenter();
+
+                flex-direction: column;
+                gap: 2rem;
+                
+                .group-buttons {
+                    @include flexSpaceAroundStart();
+
+                    width: 100%;
+                    
+                    div {
+                        width: 13.6rem;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

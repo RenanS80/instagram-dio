@@ -1,4 +1,21 @@
-$white-bg: #FAFAFA;
+$white-bg: #F3F3F3;
+$white: #FFF;
 $black: #17151A;
 $blue: #0095F6;
+$gray-border: lightgray;
 $gray: #8E8E8E;
+
+@mixin flexStartStart {
+    display: flex;
+}
+
+@mixin flexCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexSpaceAroundStart {
+    display: flex;
+    justify-content: space-around;
+}

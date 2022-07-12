@@ -1,1 +1,167 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #F3F3F3;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+main {
+  height: 100vh;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 120rem;
+  height: 100%;
+  gap: 6rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+main .container .instagram-phone {
+  height: 59.1rem;
+  width: 30rem;
+}
+
+main .container .instagram-phone img {
+  width: 100%;
+}
+
+main .container .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF;
+  border: 0.1rem solid lightgray;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.5rem 1.5rem;
+}
+
+main .container .profile-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40rem;
+  padding: 0 1rem;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .container .profile-login .profile-login-top {
+  gap: 2rem;
+}
+
+main .container .profile-login .profile-login-top .profile-image {
+  width: 12rem;
+  height: 12rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+main .container .profile-login .profile-login-top .profile-image img {
+  width: 100%;
+}
+
+main .container .profile-login .profile-login-top .btn-continue {
+  background-color: #0095F6;
+  color: #FFF;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+}
+
+main .container .profile-login .profile-login-top .btn-remove-acc {
+  color: #0095F6;
+  background-color: transparent;
+}
+
+main .container .profile-login .profile-login-bottom {
+  gap: 0.5rem;
+}
+
+main .container .profile-login .profile-login-bottom p:first-child {
+  color: #8E8E8E;
+}
+
+main .container .profile-login .profile-login-bottom p:last-child span {
+  color: #0095F6;
+  cursor: pointer;
+}
+
+main .container .profile-login .download-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+main .container .profile-login .download-app .group-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+main .container .profile-login .download-app .group-buttons div {
+  width: 13.6rem;
+}
+
+main .container .profile-login .download-app .group-buttons div img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
