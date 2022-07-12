@@ -9,6 +9,11 @@ $gray: #8E8E8E;
     display: flex;
 }
 
+@mixin flexStartCenter {
+    display: flex;
+    align-items: center;
+}
+
 @mixin flexCenterCenter {
     display: flex;
     justify-content: center;
